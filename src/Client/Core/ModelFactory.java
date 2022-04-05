@@ -11,7 +11,7 @@ public class ModelFactory
   {
     if(modelInterface==null)
     {
-      modelInterface = new ModelManager(); // ADD STUFF
+      modelInterface = new ModelManager();
     }
     return modelInterface;
   }

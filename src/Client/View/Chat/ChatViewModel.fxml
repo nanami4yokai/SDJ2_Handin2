@@ -6,13 +6,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.View.Chat.ChatViewController">
    <children>
       <TextArea layoutX="13.0" layoutY="45.0" prefHeight="260.0" prefWidth="574.0" />
-      <TextArea layoutX="13.0" layoutY="320.0" prefHeight="66.0" prefWidth="499.0" />
-      <Button layoutX="522.0" layoutY="320.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="64.0" text="Send" />
-      <Label layoutX="13.0" layoutY="5.0" prefHeight="35.0" prefWidth="267.0" text="Username:">
+      <TextArea fx:id="messageArea" layoutX="13.0" layoutY="320.0" prefHeight="66.0" prefWidth="499.0" />
+      <Button fx:id="send" layoutX="522.0" layoutY="320.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="64.0" text="Send" />
+      <Label fx:id="username" layoutX="13.0" layoutY="5.0" prefHeight="35.0" prefWidth="267.0" text="Username:">
          <font>
             <Font size="14.0" />
          </font>

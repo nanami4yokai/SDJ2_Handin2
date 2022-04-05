@@ -19,7 +19,7 @@ public class ViewHandler
     this.viewModelFactory=viewModelFactory;
   }
 
-  public void openChatView() throws IOException
+  public void openChatView(String username) throws IOException
   {
     Scene scene = null;
     FXMLLoader loader = new FXMLLoader();
@@ -28,7 +28,7 @@ public class ViewHandler
     loader.setLocation(getClass().getResource("../View/Chat/ChatViewModel.fxml"));
     root = loader.load();
     ChatViewController view = loader.getController();
-    view.init(this,viewModelFactory);
+    view.initPlus(this,viewModelFactory,username);
     scene = new Scene(root);
     stage.setTitle("Chat");
     stage.setScene(scene);
