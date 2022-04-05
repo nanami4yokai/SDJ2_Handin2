@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MessageModel">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatViewController">
    <children>
       <TextArea layoutX="13.0" layoutY="45.0" prefHeight="260.0" prefWidth="574.0" />
       <TextArea layoutX="13.0" layoutY="320.0" prefHeight="66.0" prefWidth="499.0" />
