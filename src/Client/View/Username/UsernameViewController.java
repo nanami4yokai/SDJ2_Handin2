@@ -18,12 +18,10 @@ public class UsernameViewController implements ViewController
   private UsernameViewModel usernameViewModel;
   public void init(ViewHandler viewHandler, ViewModelFactory viewModelFactory)
   {
-    // LOAD ALL NEEDED STUFF
   }
 
   public void onSaveButton(ActionEvent e) throws IOException
   {
-
     viewHandler.openChatView(textField.getText());
   }
 }
