@@ -2,7 +2,7 @@ package Client.Model;
 
 import java.util.ArrayList;
 
-public class ModelManager
+public class ModelManager implements ModelInterface
 {
   private ArrayList<User> users;
 

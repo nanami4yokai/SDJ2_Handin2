@@ -1,6 +1,7 @@
 package Client.Core;
 
 import Client.Model.ModelInterface;
+import Client.Model.ModelManager;
 
 public class ModelFactory
 {
@@ -10,7 +11,7 @@ public class ModelFactory
   {
     if(modelInterface==null)
     {
-      modelInterface = new ModelInterface(); // ADD STUFF
+      modelInterface = new ModelManager(); // ADD STUFF
     }
     return modelInterface;
   }
