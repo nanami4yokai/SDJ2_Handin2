@@ -1,5 +1,14 @@
 package Client.View.Chat;
 
-public class ChatViewController
+import Client.Core.ViewHandler;
+import Client.Core.ViewModelFactory;
+import Client.View.ViewController;
+
+public class ChatViewController implements ViewController
 {
+
+  public void init(ViewHandler viewHandler, ViewModelFactory viewModelFactory)
+  {
+    // LOAD ALL NEEDED STUFF
+  }
 }
