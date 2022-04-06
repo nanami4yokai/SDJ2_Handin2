@@ -3,6 +3,7 @@ package Client.View.Chat;
 import Client.Core.ViewHandler;
 import Client.Core.ViewModelFactory;
 import Client.View.ViewController;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;

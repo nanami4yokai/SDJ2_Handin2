@@ -3,11 +3,12 @@ package Client.View.Username;
 import Client.Core.ViewHandler;
 import Client.Core.ViewModelFactory;
 import Client.View.ViewController;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.io.IOException;
 
 public class UsernameViewController implements ViewController
