@@ -3,9 +3,9 @@ package Client.Model;
 public class Message
 {
   private String text, dateTimeSent;
-  private User from;
+  private String from;
 
-  public Message(String text, String dateTimeSent, User from)
+  public Message(String text, String dateTimeSent, String from)
   {
     this.text=text;
     this.dateTimeSent=dateTimeSent;
@@ -22,7 +22,7 @@ public class Message
     return dateTimeSent;
   }
 
-  public User getFrom()
+  public String getFrom()
   {
     return from;
   }

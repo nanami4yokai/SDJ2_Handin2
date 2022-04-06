@@ -13,9 +13,11 @@ import javax.swing.text.View;
 public class ChatViewController implements ViewController
 {
   private ViewHandler viewHandler;
+  private ChatViewModel chatViewModel;
   @FXML Label username;
   @FXML TextArea messageArea;
   @FXML TextArea receivedArea;
+  @FXML TextArea userArea;
   public void init(ViewHandler viewHandler, ViewModelFactory viewModelFactory)
   {
   }
@@ -28,13 +30,12 @@ public class ChatViewController implements ViewController
 
   public void onSendButton()
   {
-    // NETWORKING BULLSHIT
+    chatViewModel.sendMessage(messageArea.getText(),userArea.getText());
   }
 
-  public void update()
+  public void update(String message, String from, String dateTimeSent)
   {
-    // UPDATE THE TextArea WITH INCOMING MESSAGES
-    // WE'LL CALL THIS METHOD EVERY TIME A LISTENER OR SOMETHING RECIEVES A NEW MESSAGE FROM THE SERVER
-    // AND THEN WE ADD THE NEW MESSAGE TO THE TEXT AREA LIKE A LIST
+    receivedArea.setText(receivedArea.getText()+from+" ("+dateTimeSent+"):\n"+message+"\n\n");
+    // WE'LL CALL THIS FUNCTION WHENEVER THE CLIENT RECEIVES A NEW MESSAGE
   }
 }

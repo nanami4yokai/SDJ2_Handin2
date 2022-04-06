@@ -27,7 +27,7 @@ public class User
     String rtrn=username+"\n\n";
     for(int i=0;i<messages.size();i++)
     {
-      rtrn+=messages.get(i).getFrom().getUsername()+"\n";
+      rtrn+=messages.get(i).getFrom()+"\n";
       rtrn+=messages.get(i).getText()+"\n";
       rtrn+=messages.get(i).getDateTimeSent()+"\n\n";
     }
