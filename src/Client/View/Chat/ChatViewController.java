@@ -12,6 +12,7 @@ import javax.swing.text.View;
 
 public class ChatViewController implements ViewController
 {
+  private ViewHandler viewHandler;
   @FXML Label username;
   @FXML TextArea messageArea;
   @FXML TextArea receivedArea;
@@ -21,6 +22,7 @@ public class ChatViewController implements ViewController
 
   public void initPlus(ViewHandler viewHandler,ViewModelFactory viewModelFactory, String username)
   {
+    this.viewHandler = viewHandler;
     this.username.setText(username);
   }
 
