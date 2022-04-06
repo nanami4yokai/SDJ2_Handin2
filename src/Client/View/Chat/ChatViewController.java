@@ -17,7 +17,6 @@ public class ChatViewController implements ViewController
   @FXML Label username;
   @FXML TextArea messageArea;
   @FXML TextArea receivedArea;
-  @FXML TextArea userArea;
   public void init(ViewHandler viewHandler, ViewModelFactory viewModelFactory)
   {
   }
@@ -26,11 +25,12 @@ public class ChatViewController implements ViewController
   {
     this.viewHandler = viewHandler;
     this.username.setText(username);
+    this.chatViewModel=viewModelFactory.getChatViewModel();
   }
 
   public void onSendButton()
   {
-    chatViewModel.sendMessage(messageArea.getText(),userArea.getText());
+    chatViewModel.sendMessage(messageArea.getText(),username.getText());
   }
 
   public void update(String message, String from, String dateTimeSent)

@@ -20,6 +20,7 @@ public class UsernameViewController implements ViewController
   public void init(ViewHandler viewHandler, ViewModelFactory viewModelFactory)
   {
     this.viewHandler = viewHandler;
+    this.usernameViewModel=viewModelFactory.getUsernameViewModel();
   }
 
   public void onSaveButton(ActionEvent e) throws IOException
