@@ -1,6 +1,7 @@
 package Client.Core;
 
 import Client.View.Chat.ChatViewController;
+import Client.View.Username.UsernameViewController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -43,7 +44,7 @@ public class ViewHandler
 
     loader.setLocation(getClass().getResource("../View/Username/UsernameViewModel.fxml"));
     root = loader.load();
-    ChatViewController view = loader.getController();
+    UsernameViewController view = loader.getController();
     view.init(this,viewModelFactory);
     scene = new Scene(root);
     stage.setTitle("Chat");
