@@ -1,5 +1,6 @@
 package Client;
 
+import Client.Core.ClientFactory;
 import Client.Core.ModelFactory;
 import Client.Core.ViewHandler;
 import Client.Core.ViewModelFactory;

@@ -8,7 +8,7 @@ public class SocketServer
 {
   public void start() throws IOException
   {
-    ServerSocket serverSocket = new ServerSocket(1235);
+    ServerSocket serverSocket = new ServerSocket(1234);
     System.out.println("Server started.");
 
     ConnectionPool pool = new ConnectionPool();

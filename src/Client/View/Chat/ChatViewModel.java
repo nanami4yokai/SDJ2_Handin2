@@ -26,8 +26,8 @@ public class ChatViewModel
 
   }
 
-  public void receiveMessage(Message message)
+/*  public void receiveMessage(Message message)
   {
     //chatViewController.
-  }
+  }*/
 }
