@@ -1,16 +1,24 @@
 package Client.Networking;
 
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class Handler implements Runnable
 {
-  private SocketClient client;
-  private Socket socket;
+  private SocketClient socketClient;
 
-  public Handler(Socket socket, SocketClient client)
+  private ObjectOutputStream objectOutputStream;
+  private ObjectInputStream objectInputStream;
+
+  public Handler(ObjectOutputStream objectOutputStream,
+      ObjectInputStream objectInputStream,
+      SocketClient socketClient)
   {
-    this.client = client;
-    this.socket = socket;
+    this.objectOutputStream = objectOutputStream;
+    this.objectInputStream = objectInputStream;
+
+    this.socketClient = socketClient;
   }
 
   @Override public void run()

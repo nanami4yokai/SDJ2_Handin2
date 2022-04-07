@@ -1,13 +1,12 @@
 package Client.Networking;
 
+import Util.Subject;
+
 import java.io.IOException;
 
-public class Client
+public interface Client extends Subject
 {
-  public static void main(String[] args) throws IOException
-  {
-    SocketClient socketClient = new SocketClient();
-    socketClient.start();
-
-  }
+  void startClient();
+  void requestMessage();
+  void sendMessage();
 }

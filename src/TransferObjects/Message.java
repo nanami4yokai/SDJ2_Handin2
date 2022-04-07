@@ -1,13 +1,25 @@
 package TransferObjects;
 
+import java.io.Serializable;
+
 public class Message
 {
-  private String text, dateTimeSent, from;
+  private String message, dateTimeSent, from;
 
-  public Message(String text,String dateTimeSent, String from)
+  public Message(String message,String dateTimeSent, String from)
   {
-    this.text=text;
-    this.dateTimeSent=dateTimeSent;
-    this.from=from;
+    this.message = message;
+    this.dateTimeSent = dateTimeSent;
+    this.from = from;
+  }
+
+  public String getFrom()
+  {
+    return from;
+  }
+
+  public String getMessage()
+  {
+    return message;
   }
 }
