@@ -1,7 +1,7 @@
 package Client.View.Chat;
 
 import Client.Core.ModelFactory;
-import Client.Model.Message;
+import TransferObjects.Message;
 import Client.Model.ModelInterface;
 
 import java.util.GregorianCalendar;
@@ -9,7 +9,6 @@ import java.util.GregorianCalendar;
 public class ChatViewModel
 {
   private ModelInterface modelInterface;
-  private ChatViewController chatViewController;
 
   public ChatViewModel(ModelInterface modelInterface)
   {
@@ -23,11 +22,5 @@ public class ChatViewModel
 
     Message message = new Message(text,dateTimeSent,user);
     // AND FROM HERE WE SEND IT TO THE SERVER... SOMEHOW
-
   }
-
-/*  public void receiveMessage(Message message)
-  {
-    //chatViewController.
-  }*/
 }

@@ -2,12 +2,12 @@ package TransferObjects;
 
 public class Message
 {
-  private String message;
+  private String text, dateTimeSent, from;
 
-  public Message(String message)
+  public Message(String text,String dateTimeSent, String from)
   {
-    this.message = message;
+    this.text=text;
+    this.dateTimeSent=dateTimeSent;
+    this.from=from;
   }
-
-  public String getMessage(){ return message; }
 }

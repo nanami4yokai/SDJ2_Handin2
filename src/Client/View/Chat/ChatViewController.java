@@ -31,6 +31,7 @@ public class ChatViewController implements ViewController
   public void onSendButton()
   {
     chatViewModel.sendMessage(messageArea.getText(),username.getText());
+    messageArea.setText("");
   }
 
   public void update(String message, String from, String dateTimeSent)
