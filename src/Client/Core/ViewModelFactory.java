@@ -11,6 +11,7 @@ public class ViewModelFactory
 
   public ViewModelFactory(ModelFactory modelFactory)
   {
+    this.modelFactory = modelFactory;
     usernameViewModel= new UsernameViewModel(modelFactory.getModelInterface());
     chatViewModel = new ChatViewModel(modelFactory.getModelInterface());
   }
